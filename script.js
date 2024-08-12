@@ -1,13 +1,13 @@
 async function search() {
-    var query = document.getElementById('search_query').value;
+    const query = document.getElementById('search_query').value;
 
-    var requestUrl = `https://api.jikan.moe/v4/anime?q=${encodeURIComponent(query)}&sfw`;
+    const requestUrl = `https://api.jikan.moe/v4/anime?q=${encodeURIComponent(query)}&sfw`;
 
     try {
         const response = await fetch(requestUrl);
         const data = await response.json();
 
-        var node = document.getElementById('search_results');
+        const node = document.getElementById('search_results');
         node.innerHTML = ''; // Clear previous results
 
         const maxResults = 16;
