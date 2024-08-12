@@ -1,0 +1,265 @@
+@import url(https://db.onlinewebfonts.com/c/1e278e0809ec7a4bd9facd42c76038b1?family=Midorima);
+@font-face {
+  font-family: "Midorima";
+  src: url("https://db.onlinewebfonts.com/t/1e278e0809ec7a4bd9facd42c76038b1.eot");
+  src: url("https://db.onlinewebfonts.com/t/1e278e0809ec7a4bd9facd42c76038b1.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/1e278e0809ec7a4bd9facd42c76038b1.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/1e278e0809ec7a4bd9facd42c76038b1.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/1e278e0809ec7a4bd9facd42c76038b1.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/1e278e0809ec7a4bd9facd42c76038b1.svg#Midorima")format("svg");
+}
+:root{
+  --base-color: rgb(230, 227, 227);
+  --base-variant: #acaeb6;
+  --text-color: #111528;
+  --secondary-text: #232738;
+  --primary-color: #3a435d;
+  --accent-color: #0071ff;
+}
+.darkmode{
+  --base-color: #070b1d;
+  --base-variant: #101425;
+  --text-color: #ffffff;
+  --secondary-text: #a4a5b8;
+  --primary-color: #3a435d;
+  --accent-color: #0071ff;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-family: Poppins;
+}
+body{
+  font-family: "Midorima";
+  min-height: 100vh;
+  background-color: var(--base-color);
+  color: var(--text-color);
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+a{
+  text-decoration: none;
+  
+
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.Anime{
+  gap: 30px;
+  word-spacing: 5px;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+/* 
+.text-animation {
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 200px;
+  }
+  .text-animation span {
+    position: relative;
+  }
+  .text-animation span:before {
+    content: "AniWorld";
+    color: rgb(5, 5, 5);
+    animation: words 20s infinite;
+  }
+  .text-animation span::after {
+    content: "";
+    background-color: rgb(11, 9, 27);
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 3px solid rgb(59, 58, 58);
+    right: -8px;
+    animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
+  }
+  @keyframes cursor {
+    to {
+      border-left: 2px solid gray;
+    }
+  }
+@keyframes words {
+    0%,
+    20% {
+      content: "AniWorld";
+    }
+    21%,
+    40% {
+      content: "AniWorld";
+    }
+    41%,
+    60% {
+      content: "AniWorld";
+    }
+    61%,
+    80% {
+      content: "AniWorld";
+    }
+    81%,
+    100% {
+      content: "AniWorld";
+    }
+  }
+  @keyframes typing {
+    10%,
+    15%,
+    30%,
+    35%,
+    50%,
+    55%,
+    70%,
+    75%,
+    90%,
+    95% {
+      width: 0;
+    }
+    5%,
+    20%,
+    25%,
+    40%,
+    45%,
+    60%,
+    65%,
+    80%,
+    85% {
+      width: calc(100% + 8px);
+    }
+  } */
+.left-column {
+    flex: -1;
+}
+.right-column {
+    flex: 1;
+}
+h1 {
+    font-size: 48px;
+    gap: 10%;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+.subtitle {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.description {
+    margin-bottom: 30px;
+}
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+.button {
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.search-box {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 20px;
+}
+.search-box input {
+    width: 100%;
+    padding: 5px;
+    
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.search-box button {
+    padding: 10px 20px;
+    background-color: #4a5568;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.search-results {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+h3{
+  text-align: center;
+}
+button{
+  border: none;
+  padding: .8em 2em;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 4px;
+  font: inherit;
+  text-transform: uppercase;
+  font-weight: 500;
+  cursor: pointer;
+}
+.cta-button{
+  background-color: var(--accent-color);
+}
+#theme-switch{
+  height: 50px;
+  width: 50px;
+  padding: 0;
+  border-radius: 50%;
+  background-color: var(--base-variant);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+#theme-switch svg{
+  fill: var(--primary-color);
+}
+#theme-switch svg:last-child{
+  display: none;
+}
+.darkmode #theme-switch svg:first-child{
+  display: none;
+}
+.darkmode #theme-switch svg:last-child{
+  display: block;
+}
